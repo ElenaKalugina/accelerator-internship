@@ -1,0 +1,88 @@
+.btn {
+  padding: 3px 3px 3px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 29px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  transition: all $trans-default;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 30px;
+  text-decoration: none;
+  width: fit-content;
+  border: 1px solid $color-transparent;
+
+  .btn__icon-container {
+   width: 46px;
+   height: 46px;
+   padding: 16px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+  }
+
+}
+
+
+
+
+.btn--primary {
+  background-color: $color-accent;
+  border: 1px solid $color-default-white;
+
+  .btn__icon-container {
+    background-color: $color-default-white;
+  }
+}
+
+.btn--menu {
+  width: 154px;
+  gap: 20px;
+  background-color: $color-default-white;
+  border: 1px solid $color-accent;
+  color: $color-accent;
+  transform-origin: left;
+  justify-self: end;
+
+  .btn__icon-container {
+    background-color: $color-accent;
+  }
+
+  svg {
+    display: block;
+    color: $color-default-white;
+  }
+
+  svg + svg {
+    display: none;
+  }
+
+}
+
+
+.btn--menu.is-open {
+  width: 286px;
+  background-color: $color-accent;
+  border: 1px solid $color-default-black;
+  color: $color-default-white;
+
+  .btn__icon-container {
+    background-color: $color-default-white;
+  }
+
+  svg {
+    display: none;
+    color: $color-accent;
+  }
+
+  svg + svg {
+    display: block;
+  }
+
+}
+

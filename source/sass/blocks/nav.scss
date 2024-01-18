@@ -1,0 +1,24 @@
+.nav {
+   position: absolute;
+  // width: 100%;
+  // display: flex;
+  // justify-content: space-between;
+  // top: 30px;
+  // left: 0;
+   z-index: $index-nav;
+  //  width: 1240px;
+  //  margin: 0 auto;
+}
+
+.nav__burger-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.nav__menu {
+  position: absolute;
+  top: 58px;
+  right: 0;
+}

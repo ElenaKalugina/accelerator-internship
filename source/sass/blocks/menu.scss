@@ -1,0 +1,88 @@
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: $color-accent;
+  cursor: pointer;
+  user-select: none;
+  transition: all $trans-default;
+  width: 286px;
+  display: none;
+  transform-origin: right top;
+  transform: scale(0);
+  padding: 35px 25px;
+  border: 1px solid $color-transparent;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.menu.is-open {
+  transform: scale(1);
+}
+
+.menu span {
+  margin-right: 10px;
+}
+
+
+.menu__item > a {
+  display: inline-block;
+  padding: 5px 0;
+  margin: 0;
+  color: $color-default-white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  opacity: 0.7;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.menu__item.is-active > {
+  a {
+    opacity: 1;
+  }
+}
+
+.menu__item.is-active  svg {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.menu__submenu {
+  padding: 10px 0 0 16px;
+  margin: 0;
+  list-style: none;
+  background-color: $color-accent;
+  cursor: pointer;
+  user-select: none;
+  transition: all $trans-default;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu__submenu-item > a {
+  display: inline-block;
+  padding: 5px 0;
+  margin: 0;
+  color: $color-default-white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  opacity: 0.6;
+  text-transform: capitalize;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+}

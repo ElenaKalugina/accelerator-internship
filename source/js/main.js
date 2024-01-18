@@ -3,3 +3,15 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
+import {iosVhFix} from './utils/ios-vh-fix';
+import {menuToggle} from './modules/menu/menu-toggle.js';
+import {initAccordions} from './vendor/accordions/init-accordion';
+
+window.addEventListener('DOMContentLoaded', () => {
+  iosVhFix();
+  menuToggle();
+
+  window.addEventListener('load', () => {
+    initAccordions();
+  });
+});
