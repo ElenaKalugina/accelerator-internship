@@ -1,13 +1,6 @@
 .nav {
    position: absolute;
-  // width: 100%;
-  // display: flex;
-  // justify-content: space-between;
-  // top: 30px;
-  // left: 0;
    z-index: $index-nav;
-  //  width: 1240px;
-  //  margin: 0 auto;
 }
 
 .nav__burger-container {
@@ -21,4 +14,10 @@
   position: absolute;
   top: 58px;
   right: 0;
+}
+
+.nav.is-open .nav__logo {
+  @include vp-767 {
+    display: none;
+  }
 }
