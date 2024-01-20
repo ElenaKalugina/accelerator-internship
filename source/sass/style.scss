@@ -3,6 +3,10 @@
 
 @import "vendor/normalize";
 @import "vendor/accordions/data-accordion";
+@import "swiper/css";
+
+// Global
+// ---------------------------------
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -10,6 +14,8 @@
 @import "global/utils";
 @import "global/reboot";
 
+// Blocks
+// ---------------------------------
 @import "blocks/btn";
 @import "blocks/header";
 @import "blocks/nav";
