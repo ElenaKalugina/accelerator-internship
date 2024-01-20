@@ -18,6 +18,7 @@
 <body>
   <div class="wrapper" data-set="wrapper">
     <header class="header" data-test="slider">
+      <h1 class="visually-hidden">Проект Стажировка - прокт повышения квалификации молодых специалистов</h1>
       <nav class="header__nav-container nav" data-nav="nav">
         <div class="nav__burger-container">
           <div class="nav__logo">
@@ -99,7 +100,7 @@
         </div>
       </nav>
       <section class="hero">
-        <h1 class="visually-hidden">Проект Стажировка - прокт повышения квалификации молодых специалистов</h1>
+        <h2 class="visually-hidden">Промоблок.</h2>
         <div class="swiper" data-set="hero-slider">
           <ul class="hero__list swiper-wrapper">
             <li class="hero__item swiper-slide">
@@ -214,21 +215,92 @@
               </div>
             </li>
           </ul>
-
-            <div class="hero__pagination swiper-pagination " data-set="hero-pagination"></div>
-
+           <div class="hero__pagination swiper-pagination " data-set="hero-pagination"></div>
         </div>
       </section>
-
     </header>
-    <div data-test="about"></div>
-    <div data-test="programs"></div>
-    <div data-test="grant"></div>
-    <div data-test="news"></div>
-    <div data-test="FAQ"></div>
-    <div data-test="reviews"></div>
-    <div data-test="contacts"></div>
-    <div data-test="form"></div>
+    <main>
+      <section class="about" data-test="about">
+        <div>
+        <div class="about__container container">
+          <div class="about__header-container">
+            <h2>О проекте «Стажировка»</h2>
+            <p>«Стажировка» — совместный проект правительств и&nbsp;волонтёрских бригад.</p>
+          </div>
+          <div class="about__description-container">
+            <h3>Наша цель</h3>
+            <p>Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов на&nbsp;ранних и&nbsp;средних стадиях карьеры,
+              предоставляя им&nbsp;инструменты для&nbsp;решения сложных проблем, с&nbsp;которыми сталкиваются в&nbsp;мире. Цель центра&nbsp;—
+              наделить этих людей способностью инициировать значимые изменения.</p>
+          </div>
+          <a class="about__btn btn btn--primary-light" href="#">Подробнее о проекте
+            <div class="btn__icon-container">
+              <svg width="18" height="18" role="img" focusable="false" aria-hidden="true">
+                <use href="__spritemap#sprite-arrow-up"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="container">
+        <div class="about__features features container">
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__icon-container">
+                <svg width="18" height="22" viewBox="0 0 18 22" role="img" focusable="false" aria-hidden="true">
+                  <use href="__spritemap#sprite-star"></use>
+                </svg>
+              </div>
+              <div class="features__content">
+                <h4>Более&nbsp;250 программ</h4>
+                <p>учебных и&nbsp;рабочих, разной деятельностью от&nbsp;3&nbsp;месяцев до&nbsp;1&nbsp;года</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-container">
+                <svg width="18" height="22" role="img" focusable="false" aria-hidden="true">
+                  <use href="__spritemap#sprite-star"></use>
+                </svg>
+              </div>
+              <div class="features__content">
+                <h4>Более&nbsp;3000 участников</h4>
+                <p>уже&nbsp;успешно прошли программу от&nbsp;«Стажировка» и&nbsp;остались в&nbsp;разных странах</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-container">
+                <svg width="18" height="22" role="img" focusable="false" aria-hidden="true">
+                  <use href="__spritemap#sprite-star"></use>
+                </svg>
+              </div>
+              <div class="features__content">
+                <h4>от&nbsp;4&nbsp;200&nbsp;$ до&nbsp;8&nbsp;400&nbsp;$</h4>
+                <p>грант всем участникам для&nbsp;комфортного прохождения&nbsp;программы</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-container">
+                <svg width="18" height="22" role="img" focusable="false" aria-hidden="true">
+                  <use href="__spritemap#sprite-star"></use>
+                </svg>
+              </div>
+              <div class="features__content">
+                <h4>участники из&nbsp;60&nbsp;стран</h4>
+                <p>студенты со&nbsp; всего мира приезжают на&nbsp;программу «Стажировка»</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      </section>
+      <div data-test="programs"></div>
+      <div data-test="grant"></div>
+      <div data-test="news"></div>
+      <div data-test="FAQ"></div>
+      <div data-test="reviews"></div>
+      <div data-test="contacts"></div>
+      <div data-test="form"></div>
+    </main>
     <div data-test="footer"></div>
     <div class="overlay" data-overlay="overlay"></div>
     <script type="module" src="js/main.js"></script>
