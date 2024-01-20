@@ -2,23 +2,24 @@
   position: relative;
 }
 
+
 .header__nav-container {
   position: absolute;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 1240px;
+  width: $vp-1440;
   min-width: $vp-320;
   margin: 0 auto;
   padding: 0 100px;
 
   @include vp-1439 {
-    width: 678px;
+    width: $vp-768;
     padding: 0 45px;
   }
 
   @include vp-767 {
-    width: 290px;
+    width: $vp-320;
     padding: 0 15px;
   }
 }

@@ -16,6 +16,11 @@
   right: 0;
 }
 
+.nav__logo img {
+  height: 52px;
+  width: 52px;
+}
+
 .nav.is-open .nav__logo {
   @include vp-767 {
     display: none;
