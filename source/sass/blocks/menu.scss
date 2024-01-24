@@ -1,5 +1,4 @@
 .menu {
-  padding: 0;
   margin: 0;
   list-style: none;
   background-color: $color-accent;
@@ -7,7 +6,6 @@
   user-select: none;
   transition: all $trans-default;
   width: 286px;
-  display: none;
   transform-origin: right top;
   transform: scale(0);
   padding: 35px 25px;
@@ -51,7 +49,7 @@
   }
 }
 
-.menu__item.is-active  svg {
+.menu__item.is-active svg {
   transform: rotate(180deg);
   opacity: 1;
 }

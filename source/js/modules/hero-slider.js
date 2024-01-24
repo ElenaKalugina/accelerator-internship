@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import {Pagination} from 'swiper/modules';
 
 const sliderHero = document.querySelector('[data-set="hero-slider"]');
-const paginationHero = document.querySelector('[data-set="hero-pagination"]');
+//const paginationHero = document.querySelector('[data-set="hero-pagination"]');
 
 const initSliderHero = () => {
 
@@ -10,17 +10,32 @@ const initSliderHero = () => {
     modules: [ Pagination],
 
     pagination: {
-      el: paginationHero,
+      el: '.swiper-slide-active .hero__pagination',
+      type: 'bullets',
       clickable: true,
     },
 
-    keyboard: {
-      enbled: true,
-      onlyInViewport: true,
+    on: {
+      slideChangeTransitionStart: function () {
+        newSliderHero.pagination.init();
+        newSliderHero.pagination.render();
+        newSliderHero.pagination.update();
+      }
     },
 
     autoHeight: true,
     loop: true,
+    breakpoints: {
+      1440: {
+        allowTouchMove: false,
+      },
+      768: {
+        allowTouchMove: true,
+      },
+      320: {
+        allowTouchMove: true,
+      },
+    },
   });
 
   return newSliderHero;

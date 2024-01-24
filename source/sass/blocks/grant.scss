@@ -1,0 +1,196 @@
+.grant {
+  background-color: $color-accent;
+  color: $color-default-white;
+}
+
+.grant__container {
+  width: $vp-1440;
+  padding: 124px 100px 120px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 498px);
+  column-gap: 138px;
+
+  @include vp-1439 {
+    width: $vp-768;
+    padding: 98px 45px 100px 45px;
+    grid-template-columns: auto;
+    row-gap: 40px;
+  }
+
+  @include vp-767 {
+    width: $vp-320;
+    padding: 69px 15px 67px 15px;
+    row-gap: 30px;
+  }
+}
+
+.grant__road h3 {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+
+  @include vp-1439 {
+    font-size: 34px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 13px;
+  }
+}
+
+.grant__road p {
+  margin: 0;
+  margin-bottom: 33px;
+
+  @include vp-1439 {
+   width: 500px;
+   line-height: 20px;
+   margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 25px;
+    width: $vp-container-320;
+    font-size: 14px;
+  }
+}
+
+.grant__img {
+  width: 498px;
+  height: 363px;
+
+  @include vp-1439 {
+    width: 678px;
+    height: 375px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 200px;
+  }
+
+}
+
+.grant__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.grant__info h4 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 40px;
+  margin-top: 4px;
+
+  @include vp-1439 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 5px;
+    margin-bottom: 27px;
+  }
+
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 11px;
+  }
+}
+
+.grant__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  row-gap: 8px;
+  counter-reset: number;
+
+  @include vp-1439 {
+    grid-template-columns: repeat(2, 325px);
+    column-gap: 27px;
+    row-gap: 10px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: auto;
+    row-gap: 0;
+  }
+}
+
+.grant__item {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 15px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    counter-increment: number;
+    content: counter(number);
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-accent;
+    color: $color-default-white;
+    font-family: $ff-placeholder;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.22px;
+    text-transform: uppercase;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+
+    &::before {
+      width: 25px;
+      height: 32px;
+      font-size: 18px;
+      line-height: 18px;
+      left: 3px;
+      top: 10px;
+    }
+  }
+
+}
+
+.grant__item p {
+  margin: 0;
+  padding: 22px 35px 22px 24px;
+  border-radius: 16px;
+  border: 1px solid $color-default-white;
+  height: 100%;
+
+  @include vp-1439 {
+    line-height: 20px;
+    padding: 25px 24px 25px 24px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 18px 24px 18px 24px;
+  }
+
+}
+
+.grant__br-item {
+  display: block;
+
+  @include vp-1439 {
+    display: none;
+  }
+}

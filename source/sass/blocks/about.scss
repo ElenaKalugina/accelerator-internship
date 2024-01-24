@@ -1,43 +1,53 @@
 .about {
-  background-color: $color-alabaster;
+  margin-top: 118px;
+  margin-bottom: 120px;
+
+  @include vp-1439 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  @include vp-767 {
+    margin-top: 62px;
+    margin-bottom: 63px;
+  }
 }
 
 .about__container {
   width: 100%;
   display: grid;
-  grid-template-columns: 398px 498px ;
+  grid-template-columns: 398px 498px;
   column-gap: 238px;
-  row-gap: 36px;
-  padding-top: 120px;
+  row-gap: 28px;
   padding-bottom: 60px;
 
   @include vp-1439 {
     width: $vp-768;
-    grid-template-columns: 498px ;
+    grid-template-columns: 498px;
     column-gap: 0;
-    row-gap: 40px;
-    padding-top: 100px;
+    row-gap: 29px;
   }
 
   @include vp-767 {
     width: $vp-320;
     grid-template-columns: 1fr;
-    row-gap: 30px;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    row-gap: 24px;
+    padding-bottom: 39px;
   }
 }
 
 .about__header-container {
   grid-column: 1/2;
   grid-row: 1/-1;
+  margin-top: 5px;
 
   @include vp-1439 {
     grid-row: 1/2;
+    margin-top: 0;
   }
 
   @include vp-767 {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 }
 
@@ -47,16 +57,17 @@
   line-height: 50px;
   font-weight: 400;
   color: $color-accent;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   @include vp-1439 {
     font-size: 34px;
+    margin-bottom: 25px;
   }
 
   @include vp-767 {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 }
 
@@ -69,7 +80,7 @@
   @include vp-1439 {
     font-size: 20px;
     line-height: 26px;
-    }
+  }
 
   @include vp-767 {
     font-size: 16px;
@@ -84,6 +95,11 @@
   @include vp-1439 {
     grid-column: 1/2;
     grid-row: 2/3;
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 0;
   }
 }
 
@@ -93,18 +109,18 @@
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 
   @include vp-1439 {
     font-size: 28px;
     line-height: 28px;
-    margin-bottom: 30px;
-    }
+    margin-bottom: 23px;
+  }
 
   @include vp-767 {
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
   }
 }
 
@@ -116,7 +132,7 @@
 
   @include vp-1439 {
     line-height: 20px;
-    }
+  }
 
   @include vp-767 {
     font-size: 14px;

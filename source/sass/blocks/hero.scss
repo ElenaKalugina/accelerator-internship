@@ -15,7 +15,7 @@
 
 .hero__img {
   grid-column: 1/2;
-  grid-row: 1/2;
+  grid-row: 1/-1;
   z-index: -1;
   position: relative;
   width: 100%;
@@ -48,15 +48,23 @@
   height: 100%;
 }
 
-.hero__container {
-  position: relative;
+.hero__pagination-container {
   grid-column: 1/2;
   grid-row: 1/2;
   align-self: flex-end;
+  display: grid;
+  max-height: calc(100% - 80px);
   overflow-y: hidden;
-  width: $vp-1440;;
+}
+
+.hero__container {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: flex-end;
+  overflow-y: hidden;
+  width: $vp-1440;
   height: fit-content;
-  padding-top: 100px;
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -75,9 +83,9 @@
 
 .hero__container h2 {
   width: 968px;
-  padding: 40px 50px 30px 50px;
+  padding: 40px 50px 30px;
   margin: 0;
-  border-radius: 0px 30px 30px 0px;
+  border-radius: 0 30px 30px 0;
   background-color: $color-default-white;
   color: $color-accent;
   font-size: 54px;
@@ -86,17 +94,17 @@
 
   @include vp-1439 {
     width: 659px;
-    padding: 30px 40px 24px 40px;
+    padding: 30px 40px 24px;
     font-size: 36px;
-    line-height: 44px
+    line-height: 44px;
   }
 
   @include vp-767 {
     width: 290px;
-    padding: 20px 14px 16px 14px;
+    padding: 20px 14px 16px;
     font-size: 22px;
     line-height: 26px;
-    border-radius: 0px 16px 16px 0px;
+    border-radius: 0 16px 16px 0;
   }
 }
 
@@ -119,11 +127,11 @@
   @include vp-767 {
     width: 267px;
     font-size: 14px;
-    padding: 0 42px 15px 14px;
+    padding: 0 42px 10px 14px;
     background-color: $color-default-white;
-    border-radius: 0 0 14px 0;
-    margin-bottom: -7px;
-    margin-top: -7px;
+    border-radius: 0 0 14px;
+    margin-bottom: 0;
+    margin-top: -5px;
   }
 }
 
@@ -131,14 +139,13 @@
   position: relative;
   display: flex;
   width: 772px;
-  padding: 0px 50px 35px 50px;
+  padding: 0 50px 35px;
   align-items: center;
   gap: 30px;
   background-color: $color-default-white;
-  border-radius: 0px 0px 30px 30px;
+  border-radius: 0 0 30px 30px;
 
   &::after {
-    position: absolute;
     content: "";
     width: 26px;
     height: 26px;
@@ -152,7 +159,7 @@
 
   @include vp-1439 {
     width: 591px;
-    padding: 0px 40px 35px 40px;
+    padding: 0 40px 35px;
     align-items: flex-start;
   }
 
@@ -165,7 +172,7 @@
     border-radius: 0;
     background-color: $color-transparent;
 
-     &::after {
+    &::after {
       width: 10px;
       height: 10px;
       right: -10px;
@@ -173,17 +180,21 @@
   }
 }
 
-.hero__btn-container {
+.hero__btn {
+  @include vp-767 {
+    max-width: 200px;
+  }
+}
 
+.hero__btn-container {
   @include vp-767 {
     position: relative;
     background-color: $color-default-white;
     width: fit-content;
-    padding: 10px 15px;
+    padding: 9px 15px;
     border-radius: 0 0 14px 14px;
 
     &::after {
-      position: absolute;
       content: "";
       width: 10px;
       height: 10px;
@@ -198,91 +209,56 @@
 }
 
 .hero__pagination-container {
-  position: absolute;
-  bottom: 353px;
-  display: flex;
-  width: min-content;
-  left: calc((100vw - $vp-1440 + 200px) / 2);
-  justify-content: flex-start;
-  align-items: flex-end;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 26px;
-    height: 26px;
-    background-image: url("../../img/svg/angle.svg");
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-    right: -26px;
-  }
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  width: $vp-1440;
 
   @include vp-1439 {
-    bottom: 337px;
-    left: calc((100vw - $vp-768 + 90px) / 2);
+    width: $vp-768;
   }
 
   @include vp-767 {
-    bottom: 339px;
-    left: calc((100vw - 290px) / 2);
-
-    &::after {
-      width: 10px;
-      height: 10px;
-      right: -10px;
-    }
+    width: $vp-320;
   }
 }
 
 
 .swiper {
-  position: relative;
+
   .hero__pagination {
-    position: absolute;
-    bottom: 353px;
-    width: min-content;
-    left: calc((100vw - $vp-1440 + 200px) / 2);
-    z-index: 1;
+    position: relative;
     display: flex;
     justify-content: flex-start;
     gap: 12px;
     width: fit-content;
     height: fit-content;
     padding: 14px 20px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
     background-color: $color-default-white;
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 26px;
-      height: 26px;
-      background-image: url("../../img/svg/angle.svg");
-      background-size: cover;
-      position: absolute;
-      bottom: 0;
-      right: -26px;
-    }
-
-    @include vp-1439 {
-      bottom: 333px;
-      left: calc((100vw - $vp-768 + 90px) / 2);
-    }
-
     @include vp-767 {
-      bottom: 325px;
-      left: calc((100vw - 290px) / 2);
       padding: 10px 16px;
-      border-radius: 12px 12px 0px 0px;
-
-      &::after {
-        width: 10px;
-        height: 10px;
-        right: -10px;
-      }
+      border-radius: 12px 12px 0 0;
     }
   }
+
+  .hero__pagination::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-image: url("../../img/svg/angle.svg");
+    background-size: cover;
+    bottom: 0;
+    right: -26px;
+
+    @include vp-767 {
+      width: 10px;
+      height: 10px;
+      right: -10px;
+    }
+  }
+
 
   .swiper-pagination-bullet {
     width: 10px;
