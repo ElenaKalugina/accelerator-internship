@@ -310,7 +310,6 @@
   background-color: $color-transparent;
   border: none;
   cursor: pointer;
-  flex-shrink: 0;
   width: 22px;
   height: 22px;
   padding: 0;
@@ -321,30 +320,26 @@
   display: flex;
   align-items: center;
 
-  svg {
-    flex-shrink: 0;
-  }
-
-  &:hover,
-  &:focus {
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
     background-color: $color-default-white;
     color: $color-accent;
   }
 
-  &:active {
+  &:not(:disabled):active {
     background-color: $color-default-white;
     color: $color-accent;
     opacity: 0.7;
   }
 
   &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
+
     svg {
       background-color: $color-transparent;
       color: $color-disabled;
-      cursor: not-allowed;
-      pointer-events: none;
-      outline: none;
     }
-}
-
+  }
 }

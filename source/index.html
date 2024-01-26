@@ -509,7 +509,353 @@
           </div>
         </div>
       </section>
-      <div data-test="news"></div>
+      <section class="news" id="news" data-test="news">
+        <div class="news__container container">
+          <h2>Новости и материалы</h2>
+          <div class="news__tabs">
+            <button class="news__tab is-active" data-tab="news-tab">Общее</button>
+            <button class="news__tab" data-tab="news-tab">Волонтёрство</button>
+            <button class="news__tab" data-tab="news-tab">Стажировки</button>
+            <button class="news__tab" data-tab="news-tab">Карьера</button>
+            <button class="news__tab" data-tab="news-tab">Путешествия</button>
+          </div>
+          <div class="news__swiper swiper" data-set="news-slider">
+            <ul class="news__list swiper-wrapper">
+              <li class="news__item news__item--primary swiper-slide">
+                <div class="news__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-1.webp 1x, img/news/news-mobile-1@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-1.jpg 1x, img/news/news-mobile-1@2x.jpg 2x" width="290" height="240">
+
+                    <source type="image/webp" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-1.webp 1x, img/news/news-tablet-1@2x.webp 2x" width="324" height="350">
+                    <source type="image/jpg" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-1.jpg 1x, img/news/news-tablet-1@2x.jpg 2x" width="324" height="350">
+
+                    <source type="image/webp" srcset="img/news/news-desktop-1.webp 1x, img/news/news-desktop-1@2x.webp 2x"
+                      width="604" height="400">
+                    <img src="img/news/news-desktop-1.jpg" srcset="img/news/news-desktop-1@2x.jpg 2x" width="604" height="400"
+                      alt="Беседующая пара.">
+                  </picture>
+                </div>
+                <div class="news__content-container">
+                  <p>23/03/2023</p>
+                  <h3>Интервью с&nbsp;участницей программы стажировки</h3>
+                  <div class="news__content">
+                    <p>Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как&nbsp;прошла 6-месячная стажировка
+                      в&nbsp;ISOFound</p>
+                    <a class="news__btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Подробнее</span>
+                      <div class="btn__icon-container">
+                        <svg width="8" height="8" role="img" focusable="false" aria-hidden="true">
+                          <use href="__spritemap#sprite-arrow-up"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-2.webp 1x, img/news/news-mobile-2@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-2.jpg 1x, img/news/news-mobile-2@2x.jpg 2x" width="290" height="240">
+
+                    <source type="image/webp" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-2.webp 1x, img/news/news-tablet-2@2x.webp 2x" width="324" height="350">
+                    <source type="image/jpg" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-2.jpg 1x, img/news/news-tablet-2@2x.jpg 2x" width="324" height="350">
+
+                    <source type="image/webp" srcset="img/news/news-desktop-2.webp 1x, img/news/news-desktop-2@2x.webp 2x"
+                      width="286" height="400">
+                    <img src="img/news/news-desktop-2.jpg" srcset="img/news/news-desktop-2@2x.jpg 2x" width="286" height="400"
+                      alt="Вид на побережье.">
+                  </picture>
+                </div>
+                <div class="news__content-container">
+                  <p>20/03/2023</p>
+                  <h3>Путешествуем по&nbsp;миру</h3>
+                  <div class="news__content">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <a class="news__btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Подробнее</span>
+                      <div class="btn__icon-container">
+                        <svg width="8" height="8" role="img" focusable="false" aria-hidden="true">
+                          <use href="__spritemap#sprite-arrow-up"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-3.webp 1x, img/news/news-mobile-3@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-3.jpg 1x, img/news/news-mobile-3@2x.jpg 2x" width="290" height="240">
+
+                    <source type="image/webp" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-3.webp 1x, img/news/news-tablet-3@2x.webp 2x" width="324" height="350">
+                    <source type="image/jpg" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-3.jpg 1x, img/news/news-tablet-3@2x.jpg 2x" width="324" height="350">
+
+                    <source type="image/webp" srcset="img/news/news-desktop-3.webp 1x, img/news/news-desktop-3@2x.webp 2x"
+                      width="286" height="400">
+                    <img src="img/news/news-desktop-3.jpg" srcset="img/news/news-desktop-3@2x.jpg 2x" width="286" height="400"
+                      alt="Фотография волонтера.">
+                  </picture>
+                </div>
+                <div class="news__content-container">
+                  <p>17/03/2023</p>
+                  <h3>Новая программа волонтёрства</h3>
+                  <div class="news__content">
+                    <p>Программа помощи детям длительностью 4&nbsp;месяца</p>
+                    <a class="news__btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Подробнее</span>
+                      <div class="btn__icon-container">
+                        <svg width="8" height="8" role="img" focusable="false" aria-hidden="true">
+                          <use href="__spritemap#sprite-arrow-up"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-4.webp 1x, img/news/news-mobile-4@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-4.jpg 1x, img/news/news-mobile-4@2x.jpg 2x" width="290" height="240">
+
+                    <source type="image/webp" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-4.webp 1x, img/news/news-tablet-4@2x.webp 2x" width="324" height="350">
+                    <source type="image/jpg" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-4.jpg 1x, img/news/news-tablet-4@2x.jpg 2x" width="324" height="350">
+
+                    <source type="image/webp" srcset="img/news/news-desktop-4.webp 1x, img/news/news-desktop-4@2x.webp 2x"
+                      width="286" height="400">
+                    <img src="img/news/news-desktop-4.jpg" srcset="img/news/news-desktop-4@2x.jpg 2x" width="286" height="400"
+                      alt="Фотография волонтера.">
+                  </picture>
+                </div>
+                <div class="news__content-container">
+                  <p>10/03/2023</p>
+                  <h3>Построй свою карьеру</h3>
+                  <div class="news__content">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <a class="news__btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Подробнее</span>
+                      <div class="btn__icon-container">
+                        <svg width="8" height="8" role="img" focusable="false" aria-hidden="true">
+                          <use href="__spritemap#sprite-arrow-up"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-2.webp 1x, img/news/news-mobile-2@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-2.jpg 1x, img/news/news-mobile-2@2x.jpg 2x" width="290" height="240">
+
+                    <source type="image/webp" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-2.webp 1x, img/news/news-tablet-2@2x.webp 2x" width="324" height="350">
+                    <source type="image/jpg" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-2.jpg 1x, img/news/news-tablet-2@2x.jpg 2x" width="324" height="350">
+
+                    <source type="image/webp" srcset="img/news/news-desktop-2.webp 1x, img/news/news-desktop-2@2x.webp 2x"
+                      width="286" height="400">
+                    <img src="img/news/news-desktop-2.jpg" srcset="img/news/news-desktop-2@2x.jpg 2x" width="286" height="400"
+                      alt="Вид на побережье.">
+                  </picture>
+                </div>
+                <div class="news__content-container">
+                  <p>20/03/2023</p>
+                  <h3>Путешествуем по&nbsp;миру</h3>
+                  <div class="news__content">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <a class="news__btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Подробнее</span>
+                      <div class="btn__icon-container">
+                        <svg width="8" height="8" role="img" focusable="false" aria-hidden="true">
+                          <use href="__spritemap#sprite-arrow-up"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-3.webp 1x, img/news/news-mobile-3@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-3.jpg 1x, img/news/news-mobile-3@2x.jpg 2x" width="290" height="240">
+
+                    <source type="image/webp" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-3.webp 1x, img/news/news-tablet-3@2x.webp 2x" width="324" height="350">
+                    <source type="image/jpg" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-3.jpg 1x, img/news/news-tablet-3@2x.jpg 2x" width="324" height="350">
+
+                    <source type="image/webp" srcset="img/news/news-desktop-3.webp 1x, img/news/news-desktop-3@2x.webp 2x"
+                      width="286" height="400">
+                    <img src="img/news/news-desktop-3.jpg" srcset="img/news/news-desktop-3@2x.jpg 2x" width="286" height="400"
+                      alt="Фотография волонтера.">
+                  </picture>
+                </div>
+                <div class="news__content-container">
+                  <p>17/03/2023</p>
+                  <h3>Новая программа волонтёрства</h3>
+                  <div class="news__content">
+                    <p>Программа помощи детям длительностью 4&nbsp;месяца</p>
+                    <a class="news__btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Подробнее</span>
+                      <div class="btn__icon-container">
+                        <svg width="8" height="8" role="img" focusable="false" aria-hidden="true">
+                          <use href="__spritemap#sprite-arrow-up"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-4.webp 1x, img/news/news-mobile-4@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-4.jpg 1x, img/news/news-mobile-4@2x.jpg 2x" width="290" height="240">
+
+                    <source type="image/webp" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-4.webp 1x, img/news/news-tablet-4@2x.webp 2x" width="324" height="350">
+                    <source type="image/jpg" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-4.jpg 1x, img/news/news-tablet-4@2x.jpg 2x" width="324" height="350">
+
+                    <source type="image/webp" srcset="img/news/news-desktop-4.webp 1x, img/news/news-desktop-4@2x.webp 2x"
+                      width="286" height="400">
+                    <img src="img/news/news-desktop-4.jpg" srcset="img/news/news-desktop-4@2x.jpg 2x" width="286" height="400"
+                      alt="Фотография волонтера.">
+                  </picture>
+                </div>
+                <div class="news__content-container">
+                  <p>17/03/2023</p>
+                  <h3>Новая программа волонтёрства</h3>
+                  <div class="news__content">
+                    <p>Программа помощи детям длительностью 4&nbsp;месяца</p>
+                    <a class="news__btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Подробнее</span>
+                      <div class="btn__icon-container">
+                        <svg width="8" height="8" role="img" focusable="false" aria-hidden="true">
+                          <use href="__spritemap#sprite-arrow-up"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-2.webp 1x, img/news/news-mobile-2@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-2.jpg 1x, img/news/news-mobile-2@2x.jpg 2x" width="290" height="240">
+
+                    <source type="image/webp" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-2.webp 1x, img/news/news-tablet-2@2x.webp 2x" width="324" height="350">
+                    <source type="image/jpg" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-2.jpg 1x, img/news/news-tablet-2@2x.jpg 2x" width="324" height="350">
+
+                    <source type="image/webp" srcset="img/news/news-desktop-2.webp 1x, img/news/news-desktop-2@2x.webp 2x"
+                      width="286" height="400">
+                    <img src="img/news/news-desktop-2.jpg" srcset="img/news/news-desktop-2@2x.jpg 2x" width="286" height="400"
+                      alt="Вид на побережье.">
+                  </picture>
+                </div>
+                <div class="news__content-container">
+                  <p>20/03/2023</p>
+                  <h3>Путешествуем по&nbsp;миру</h3>
+                  <div class="news__content">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <a class="news__btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Подробнее</span>
+                      <div class="btn__icon-container">
+                        <svg width="8" height="8" role="img" focusable="false" aria-hidden="true">
+                          <use href="__spritemap#sprite-arrow-up"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="news__item swiper-slide">
+                <div class="news__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-2.webp 1x, img/news/news-mobile-2@2x.webp 2x" width="290" height="240">
+                    <source type="image/jpg" media="(max-width: 320px)"
+                      srcset="img/news/news-mobile-2.jpg 1x, img/news/news-mobile-2@2x.jpg 2x" width="290" height="240">
+
+                    <source type="image/webp" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-2.webp 1x, img/news/news-tablet-2@2x.webp 2x" width="324" height="350">
+                    <source type="image/jpg" media="(max-width: 768px)"
+                      srcset="img/news/news-tablet-2.jpg 1x, img/news/news-tablet-2@2x.jpg 2x" width="324" height="350">
+
+                    <source type="image/webp" srcset="img/news/news-desktop-2.webp 1x, img/news/news-desktop-2@2x.webp 2x"
+                      width="286" height="400">
+                    <img src="img/news/news-desktop-2.jpg" srcset="img/news/news-desktop-2@2x.jpg 2x" width="286" height="400"
+                      alt="Вид на побережье.">
+                  </picture>
+                </div>
+                <div class="news__content-container">
+                  <p>20/03/2023</p>
+                  <h3>Путешествуем по&nbsp;миру</h3>
+                  <div class="news__content">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <a class="news__btn btn btn--secondary" href="#">
+                      <span class="visually-hidden">Подробнее</span>
+                      <div class="btn__icon-container">
+                        <svg width="8" height="8" role="img" focusable="false" aria-hidden="true">
+                          <use href="__spritemap#sprite-arrow-up"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="news__nav-container ">
+              <div class="news__pagination swiper-pagination" data-set="news-pagination"></div>
+              <div class="news__slider-buttons">
+                <button class="news__slider-btn" data-set="news-prev" type="button" aria-label="Предыдущий слайд">
+                  <svg width="11" height="12" viewBox="0 0 11 12" role="img" focusable="false" aria-hidden="true">
+                    <use href="__spritemap#sprite-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="news__slider-btn" data-set="news-next" type="button" aria-label="Следующий слайд">
+                  <svg width="11" height="12" viewBox="0 0 11 12" role="img" focusable="false" aria-hidden="true">
+                    <use href="__spritemap#sprite-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div data-test="FAQ"></div>
       <div data-test="reviews"></div>
       <div data-test="contacts"></div>

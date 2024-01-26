@@ -1,6 +1,15 @@
 .grant {
   background-color: $color-accent;
   color: $color-default-white;
+  margin-bottom: 124px;
+
+  @include vp-1439 {
+    margin-bottom: 99px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 62px;
+  }
 }
 
 .grant__container {
@@ -12,7 +21,7 @@
 
   @include vp-1439 {
     width: $vp-768;
-    padding: 98px 45px 100px 45px;
+    padding: 98px 45px 99px 45px;
     grid-template-columns: auto;
     row-gap: 40px;
   }

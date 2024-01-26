@@ -43,6 +43,10 @@ const initProgramsSwiper = () => {
         spaceBetween: 0,
         initialSlide: 1,
         allowTouchMove: true,
+        scrollbar: {
+          el: '',
+          enabled: false,
+        },
       },
     },
   });
