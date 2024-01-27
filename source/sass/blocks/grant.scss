@@ -1,14 +1,14 @@
 .grant {
   background-color: $color-accent;
   color: $color-default-white;
-  margin-bottom: 124px;
+  margin-bottom: 120px;
 
   @include vp-1439 {
-    margin-bottom: 99px;
+    margin-bottom: 95px;
   }
 
   @include vp-767 {
-    margin-bottom: 62px;
+    margin-bottom: 61px;
   }
 }
 

@@ -1,12 +1,15 @@
 .news {
+  padding-top: 4px;
   margin-bottom: 120px;
 
   @include vp-1439 {
+    padding-top: 0;
     margin-bottom: 100px;
   }
 
   @include vp-767 {
-    margin-bottom: 60px;
+    padding-top: 2px;
+    margin-bottom: 59px;
   }
 }
 
@@ -88,7 +91,7 @@
   }
 
   @include vp-767 {
-    padding: 8px 13px;
+    padding: 7px 13px 9px 13px;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.24px;
@@ -108,6 +111,7 @@
 .news__tab.is-active {
   border: 1px solid $color-accent;
   opacity: 1;
+  max-height: 30px;
 }
 
 .news__list {
@@ -122,7 +126,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 }
 
@@ -313,7 +317,7 @@
 
   @include vp-767 {
     width: 263px;
-    padding: 12px 11px 10px 0;
+    padding: 13px 11px 9px 0;
   }
 }
 
@@ -358,6 +362,10 @@
 
   .btn__icon-container {
     padding: 11px;
+
+    @include vp-767 {
+      margin-top: -3px;
+    }
   }
 }
 
@@ -371,6 +379,11 @@
 .news__nav-container {
   position: relative;
   min-height: 32px;
+
+  @include vp-767 {
+    min-height: 30px;
+    max-height: 31px;
+  }
 }
 
 .news__slider-buttons {
@@ -436,6 +449,7 @@
   transform: translateX(-50%);
 
   @include vp-767 {
+    min-height: 30px;
     gap: 16px;
     max-width: 152px;
     overflow-x: hidden;

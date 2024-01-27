@@ -46,6 +46,7 @@ const initNewsSwiper = () => {
       },
 
       320: {
+        initialSlide: 0,
         slidesPerView: 1,
         slidesPerGroup: 1,
         spaceBetween: 20,
