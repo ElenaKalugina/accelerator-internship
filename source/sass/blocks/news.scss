@@ -3,7 +3,7 @@
   margin-bottom: 120px;
 
   @include vp-1439 {
-    padding-top: 0;
+    padding-top: 4px;
     margin-bottom: 100px;
   }
 
@@ -112,6 +112,10 @@
   border: 1px solid $color-accent;
   opacity: 1;
   max-height: 30px;
+
+  @include vp-1439 {
+    max-height: none;
+  }
 }
 
 .news__list {
@@ -447,6 +451,13 @@
   cursor: pointer;
   left: 50%;
   transform: translateX(-50%);
+  max-width: 188px;
+  overflow-x: hidden;
+
+  @include vp-1439 {
+    max-width: none;
+    overflow-x: visible;
+  }
 
   @include vp-767 {
     min-height: 30px;

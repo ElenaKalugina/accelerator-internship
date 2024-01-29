@@ -9,6 +9,7 @@ import {createSliderHero} from './modules/hero-slider.js';
 import {initAccordions} from './vendor/accordions/init-accordion';
 import {createSliderPrograms} from './modules/programs-slider.js';
 import {createSliderNews} from './modules/news-slider.js';
+import {createReviewsSwiper} from './modules/reviews-slider.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   createSliderHero();
   createSliderPrograms();
   createSliderNews();
+  createReviewsSwiper();
 
   window.addEventListener('load', () => {
     initAccordions();

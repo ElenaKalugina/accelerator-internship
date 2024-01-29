@@ -1,14 +1,14 @@
 import Swiper from 'swiper';
 import {Navigation, Scrollbar} from 'swiper/modules';
-const sliderPrograms = document.querySelector('[data-set="programs-slider"]');
-const buttonNext = document.querySelector('[data-set="programs-next"]');
-const buttonPrev = document.querySelector('[data-set="programs-prev"]');
-const scrollbar = document.querySelector('[data-set="programs-scrollbar"]');
+const sliderReviews = document.querySelector('[data-set="reviews-slider"]');
+const buttonNext = document.querySelector('[data-set="reviews-next"]');
+const buttonPrev = document.querySelector('[data-set="reviews-prev"]');
+const scrollbar = document.querySelector('[data-set="reviews-scrollbar"]');
 
 
-const initProgramsSwiper = () => {
+const initReviewsSwiper = () => {
 
-  const newSliderPrograms = new Swiper(sliderPrograms, {
+  const newSliderReviews = new Swiper(sliderReviews, {
     modules: [Navigation, Scrollbar],
     direction: 'horizontal',
     navigation: {
@@ -24,7 +24,7 @@ const initProgramsSwiper = () => {
 
     breakpoints: {
       1440: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 32,
         allowTouchMove: false,
       },
@@ -51,13 +51,13 @@ const initProgramsSwiper = () => {
     },
   });
 
-  return newSliderPrograms;
+  return newSliderReviews;
 };
 
-const createSliderPrograms = () => {
-  if (document.body.contains(sliderPrograms)) {
-    initProgramsSwiper();
+const createReviewsSwiper = () => {
+  if (document.body.contains(sliderReviews)) {
+    initReviewsSwiper();
   }
 };
 
-export {createSliderPrograms};
+export {createReviewsSwiper};

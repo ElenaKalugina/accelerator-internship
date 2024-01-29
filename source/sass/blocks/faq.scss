@@ -324,3 +324,10 @@
     display: block;
   }
 }
+
+.faq__br-desktop {
+
+  @include vp-1439 {
+    display: none;
+  }
+}
