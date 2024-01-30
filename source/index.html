@@ -839,7 +839,8 @@
               </li>
             </ul>
             <div class="news__nav-container ">
-              <div class="news__pagination swiper-pagination" data-set="news-pagination"></div>
+                 <!--news__pagination--for-test нужен для прохождения теста, после прохождения тестов удалить  -->
+              <div class="news__pagination news__pagination--for-test swiper-pagination" data-set="news-pagination"></div>
               <div class="news__slider-buttons">
                 <button class="news__slider-btn" data-set="news-prev" type="button" aria-label="Предыдущий слайд">
                   <svg width="11" height="12" viewBox="0 0 11 12" role="img" focusable="false" aria-hidden="true">
@@ -1038,7 +1039,7 @@
                 </div>
                 <div class="reviews__info-container">
                   <h3>Благодаря опыту стажировки я&nbsp;узнал так&nbsp;много нового о&nbsp;себе и&nbsp;об&nbsp;окружающем мире.</h3>
-                  <p>Каждый день был&nbsp;возможностью оказать ощутимое влияние&nbsp;на&nbsp;жизнь других людей.
+                  <p>Каждый день был&nbsp;возможностью оказать ощутимое влияниена&nbsp;жизнь других людей.
                     Я&nbsp;бы&nbsp;очень рекомендовал эту&nbsp;волонтёрскую программу всем, кто&nbsp;ищет
                     значимый и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне.
                     Для&nbsp;меня было честью быть частью такой удивительной инициативы.</p>
@@ -1100,7 +1101,44 @@
           </div>
         </div>
       </section>
-      <div data-test="contacts"></div>
+      <section class="contacts" id="contacts" data-test="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__header">
+            <h2>Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3>Центральный офис</h3>
+                <address>г. Новосибирск, ул. Щетинкина 68, культурный центр</address>
+              </li>
+              <li  class="contacts__item">
+                <h3>Телефон</h3>
+                <a href="tel:7-963-876-876-76">+7&nbsp;963&nbsp;876&nbsp;876&nbsp;76</a>
+              </li>
+              <li  class="contacts__item">
+                <h3>Email</h3>
+                <a href="mailto:Info@stazh.ru">Info@stazh.ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__img">
+            <picture>
+              <source type="image/webp" media="(max-width: 320px)"
+                srcset="img/contacts/contacts-mobile.webp 1x, img/contacts/contacts-mobile@2x.webp 2x" width="290" height="240">
+              <source type="image/png" media="(max-width: 320px)"
+                srcset="img/contacts/contacts-mobile.jpg 1x, img/contacts/contacts-mobile@2x.png 2x" width="290" height="240">
+
+              <source type="image/webp" media="(max-width: 768px)"
+                srcset="img/contacts/contacts-tablet.webp 1x, img/contacts/contacts-tablet@2x.webp 2x" width="678" height="500">
+              <source type="image/png" media="(max-width: 768px)"
+                srcset="img/contacts/contacts-tablet.png 1x, img/contacts/contacts-tablet@2x.png 2x" width="678" height="500">
+
+              <source type="image/webp" srcset="img/contacts/contacts-desktop.webp 1x, img/contacts/contacts-desktop@2x.webp 2x" width="1240" height="500">
+              <img src="img/contacts/contacts-desktop.jpg" srcset="img/contacts/contacts-desktop@2x.jpg 2x" width="1240" height="500"
+                alt="Вид на побережье.">
+            </picture>
+          </div>
+        </div>
+      </section>
       <div data-test="form"></div>
     </main>
     <div data-test="footer"></div>
