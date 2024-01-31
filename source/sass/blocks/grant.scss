@@ -54,6 +54,7 @@
 .grant__road p {
   margin: 0;
   margin-bottom: 33px;
+  color: $color-alabaster;
 
   @include vp-1439 {
    width: 500px;

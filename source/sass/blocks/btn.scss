@@ -61,9 +61,18 @@
 
 .btn--primary-blue {
   border: 1px solid $color-default-white;
+  color: $color-default-white;
+
+  span {
+    width: 100%;
+  }
 
   .btn__icon-container {
     background-color: $color-default-white;
+
+    svg {
+      color: $color-accent;
+    }
   }
 
   &:hover,
@@ -73,27 +82,26 @@
 
     .btn__icon-container {
       background-color: $color-accent;
-      color: $color-default-white;
     }
 
     svg {
+      color: $color-default-white;
       transform: rotate(45deg);
     }
   }
 
   &:active {
     background-color: $color-default-white;
-    color: $color-accent;
+    color: $color-accent-70;
     opacity: 0.7;
 
     .btn__icon-container {
       background-color: $color-accent;
-      color: $color-default-white;
-      opacity: 0.7;
     }
 
     svg {
       transform: rotate(45deg);
+      color: $color-default-white;
     }
   }
 }

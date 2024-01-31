@@ -1,0 +1,98 @@
+.form {
+  background-color: $color-accent;
+  padding: 82px 74px 41px 74px;
+  border-radius: 16px;
+  width: 498px;
+
+  @include vp-1439 {
+    width: 442px;
+    padding: 60px 45px 50px 45px;
+  }
+
+  @include vp-767 {
+    width: $vp-container-320;
+    padding: 51px 15px 49px 15px;
+  }
+}
+
+.form__header {
+  margin-bottom: 29px;
+
+  @include vp-1439 {
+    margin-bottom: 32px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 26px;
+  }
+}
+
+.form__header h2 {
+  color: $color-default-white;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: left;
+
+  @include vp-1439 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 28px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 17px;
+  }
+}
+
+.form__header p {
+  color: $color-alabaster;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+
+  @include vp-1439 {
+   line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.form {
+  .custom-input,
+  .custom-textarea {
+    margin-bottom: 16px;
+  }
+
+  .custom-select {
+    margin-bottom: 20px;
+  }
+
+  .custom-toggle {
+    margin-bottom: 40px;
+  }
+
+  @include vp-767 {
+    .custom-input,
+    .custom-textarea,
+    .custom-select {
+      margin-bottom: 21px;
+    }
+
+    .custom-toggle {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.form__btn {
+  width: 100%;
+}
+

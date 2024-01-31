@@ -17,6 +17,9 @@
 
 // Blocks
 // ---------------------------------
+@import "blocks/custom-input";
+@import "blocks/custom-select";
+@import "blocks/custom-toggle";
 @import "blocks/btn";
 @import "blocks/header";
 @import "blocks/nav";
@@ -30,3 +33,5 @@
 @import "blocks/faq";
 @import "blocks/reviews";
 @import "blocks/contacts";
+@import "blocks/feedback";
+@import "blocks/form";

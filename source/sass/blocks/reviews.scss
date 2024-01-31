@@ -137,6 +137,7 @@
   width: 90px;
   height: 90px;
 
+
   @include vp-767 {
     width: 60px;
     height: 60px;
@@ -147,6 +148,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
 .reviews__data-student {
