@@ -4,6 +4,9 @@
   line-height: 12px;
   width: 100%;
   margin-bottom: 24px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 
   @include vp-767 {
     margin-bottom: 8px;
@@ -19,10 +22,7 @@
 
   label {
     position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    width: min-content;
   }
 
 
@@ -69,7 +69,7 @@
     border: 1px solid $color-default-white;
   }
 
-  input:not(:disabled):focus + .custom-toggle__icon {
+  input:not(:disabled):focus-visible + .custom-toggle__icon {
     border: 1px solid $color-default-white;
   }
 
@@ -83,6 +83,15 @@
   }
 
   input:checked:hover + .custom-toggle__icon {
+    border: 1px solid $color-default-white;
+    background-color: $color-transparent;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
+
+  input:checked:focus-visible + .custom-toggle__icon {
     border: 1px solid $color-default-white;
     background-color: $color-transparent;
 

@@ -242,6 +242,10 @@
   border: 1px solid $color-default-black;
   color: $color-default-white;
 
+  @include vp-767 {
+    width: $vp-container-320;
+  }
+
   .btn__icon-container {
     background-color: $color-default-white;
   }

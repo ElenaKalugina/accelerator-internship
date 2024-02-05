@@ -3,7 +3,7 @@
   margin-bottom: 120px;
 
   @include vp-1439 {
-    padding-top: 4px;
+    padding-top: 0;
     margin-bottom: 100px;
   }
 
@@ -59,7 +59,7 @@
 
   @include vp-1439 {
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   @include vp-767 {

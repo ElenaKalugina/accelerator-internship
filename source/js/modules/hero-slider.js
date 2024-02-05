@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Pagination} from 'swiper/modules';
+import {Autoplay, Pagination} from 'swiper/modules';
 
 const sliderHero = document.querySelector('[data-set="hero-slider"]');
 //const paginationHero = document.querySelector('[data-set="hero-pagination"]');
@@ -7,7 +7,7 @@ const sliderHero = document.querySelector('[data-set="hero-slider"]');
 const initSliderHero = () => {
 
   const newSliderHero = new Swiper(sliderHero, {
-    modules: [ Pagination],
+    modules: [Autoplay, Pagination],
 
     pagination: {
       el: '.swiper-slide-active .hero__pagination',
@@ -22,7 +22,9 @@ const initSliderHero = () => {
         newSliderHero.pagination.update();
       }
     },
-
+    autoplay: {
+      delay: 3000,
+    },
     autoHeight: true,
     loop: true,
     breakpoints: {

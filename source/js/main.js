@@ -7,9 +7,14 @@ import {createSliderPrograms} from './modules/programs-slider.js';
 import {createSliderNews} from './modules/news-slider.js';
 import {createReviewsSwiper} from './modules/reviews-slider.js';
 import {CustomSelect} from './vendor/custom-select/custom-select';
+import {StickyHeader} from './vendor/sticky-header';
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
+
+  const stickyHeader = new StickyHeader();
+  stickyHeader.init();
+
   menuToggle();
   createSliderHero();
   createSliderPrograms();
