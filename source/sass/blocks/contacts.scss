@@ -94,13 +94,7 @@
   @include vp-767 {
     grid-template-columns: 1fr;
     row-gap: 14px;
-
   }
-}
-
-.contacts__item {
-  width: min-content;
-
 }
 
 .contacts__item h3 {
@@ -124,6 +118,8 @@
 }
 
 .contacts__item {
+  width: min-content;
+
   address,
   a {
     width: 263px;
@@ -144,7 +140,6 @@
       line-height: 20px;
     }
   }
-
 }
 
 .contacts__item address {
@@ -156,6 +151,7 @@
     margin-top: 8px;
   }
 }
+
 .contacts__img {
   width: 1240px;
   height: 500px;

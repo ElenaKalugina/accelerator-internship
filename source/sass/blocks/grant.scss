@@ -14,21 +14,21 @@
 
 .grant__container {
   width: $vp-1440;
-  padding: 124px 100px 120px 100px;
+  padding: 124px 100px 120px;
   display: grid;
   grid-template-columns: repeat(2, 498px);
   column-gap: 138px;
 
   @include vp-1439 {
     width: $vp-768;
-    padding: 98px 45px 99px 45px;
+    padding: 98px 45px 99px;
     grid-template-columns: auto;
     row-gap: 40px;
   }
 
   @include vp-767 {
     width: $vp-320;
-    padding: 69px 15px 67px 15px;
+    padding: 69px 15px 67px;
     row-gap: 30px;
   }
 }
@@ -57,9 +57,9 @@
   color: $color-alabaster;
 
   @include vp-1439 {
-   width: 500px;
-   line-height: 20px;
-   margin-bottom: 36px;
+    width: 500px;
+    line-height: 20px;
+    margin-bottom: 36px;
   }
 
   @include vp-767 {
@@ -82,7 +82,6 @@
     width: 290px;
     height: 200px;
   }
-
 }
 
 .grant__img img {
@@ -174,7 +173,6 @@
       top: 10px;
     }
   }
-
 }
 
 .grant__item p {
@@ -186,15 +184,14 @@
 
   @include vp-1439 {
     line-height: 20px;
-    padding: 25px 24px 25px 24px;
+    padding: 25px 24px;
   }
 
   @include vp-767 {
     font-size: 14px;
     line-height: 20px;
-    padding: 18px 24px 18px 24px;
+    padding: 18px 24px;
   }
-
 }
 
 .grant__br-item {

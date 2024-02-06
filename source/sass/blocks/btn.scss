@@ -69,10 +69,10 @@
 
   .btn__icon-container {
     background-color: $color-default-white;
+  }
 
-    svg {
-      color: $color-accent;
-    }
+  .btn__icon-container svg {
+    color: $color-accent;
   }
 
   &:hover,
@@ -149,6 +149,7 @@
 
 .btn--secondary {
   padding: 0;
+
   .btn__icon-container {
     width: 30px;
     height: 30px;
@@ -222,7 +223,6 @@
     svg {
       color: $color-accent;
     }
-
   }
 
   svg {
@@ -259,4 +259,3 @@
     display: block;
   }
 }
-

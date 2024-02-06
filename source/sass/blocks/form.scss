@@ -1,17 +1,40 @@
 .form {
   background-color: $color-accent;
-  padding: 82px 74px 41px 74px;
+  padding: 82px 74px 41px;
   border-radius: 16px;
   width: 498px;
 
+  .custom-input,
+  .custom-textarea {
+    margin-bottom: 16px;
+  }
+
+  .custom-select {
+    margin-bottom: 20px;
+  }
+
+  .custom-toggle {
+    margin-bottom: 40px;
+  }
+
   @include vp-1439 {
     width: 442px;
-    padding: 60px 45px 50px 45px;
+    padding: 60px 45px 50px;
   }
 
   @include vp-767 {
     width: $vp-container-320;
-    padding: 51px 15px 49px 15px;
+    padding: 51px 15px 49px;
+
+    .custom-input,
+    .custom-textarea,
+    .custom-select {
+      margin-bottom: 21px;
+    }
+
+    .custom-toggle {
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -57,7 +80,7 @@
   line-height: 26px;
 
   @include vp-1439 {
-   line-height: 20px;
+    line-height: 20px;
   }
 
   @include vp-767 {
@@ -65,34 +88,6 @@
   }
 }
 
-.form {
-  .custom-input,
-  .custom-textarea {
-    margin-bottom: 16px;
-  }
-
-  .custom-select {
-    margin-bottom: 20px;
-  }
-
-  .custom-toggle {
-    margin-bottom: 40px;
-  }
-
-  @include vp-767 {
-    .custom-input,
-    .custom-textarea,
-    .custom-select {
-      margin-bottom: 21px;
-    }
-
-    .custom-toggle {
-      margin-bottom: 28px;
-    }
-  }
-}
-
 .form__btn {
   width: 100%;
 }
-

@@ -76,7 +76,7 @@
 .faq__btn {
   width: 100%;
   margin: 0;
-  padding: 40px 38px 36px 38px;
+  padding: 40px 38px 36px;
   border: 1px solid $color-transparent;
   border-radius: 16px;
   display: flex;
@@ -89,14 +89,22 @@
   text-align: left;
   gap: 10px;
 
+  span {
+    width: 79%;
+  }
+
+  span + span {
+    width: 40px;
+  }
+
   @include vp-1439 {
-    padding: 37px 28px 27px 28px;
+    padding: 37px 28px 27px;
     font-size: 22px;
     line-height: 26px;
   }
 
   @include vp-767 {
-    padding: 20px 13px 19px 13px;
+    padding: 20px 13px 19px;
     font-size: 16px;
     line-height: 18px;
     align-items: center;
@@ -120,18 +128,8 @@
     .faq__btn-icon {
       background-color: $color-endeavour;
       border: 1px solid $color-accent;
-      color: $color-default-white
+      color: $color-default-white;
     }
-  }
-}
-
-.faq__btn {
-  span {
-    width: 79%;
-  }
-
-  span+span {
-    width: 40px;
   }
 }
 
@@ -155,23 +153,23 @@
     margin-top: -3px;
   }
 
-  svg+svg {
+  svg + svg {
     display: none;
   }
 }
 
 .faq__accordion-element--thin .faq__btn {
-  padding: 29px 38px 32px 38px;
+  padding: 29px 38px 32px;
 
   .faq__btn-icon {
-    margin-top:  8px;
+    margin-top: 8px;
   }
 
   @include vp-1439 {
-    padding: 24px 28px 23px 28px;
+    padding: 24px 28px 23px;
 
     .faq__btn-icon {
-      margin-top:  5px;
+      margin-top: 5px;
     }
   }
 
@@ -180,7 +178,7 @@
     align-items: center;
 
     .faq__btn-icon {
-      margin-top:  0;
+      margin-top: 0;
     }
   }
 }
@@ -190,12 +188,35 @@
   color: $color-alabaster;
   padding-bottom: 32px;
 
+  svg {
+    display: none;
+  }
+
+  svg + svg {
+    display: block;
+  }
+
   @include vp-1439 {
     padding-bottom: 25px;
   }
 
   @include vp-767 {
     padding-bottom: 14px;
+  }
+
+  .faq__accordion-content {
+    padding: 0 40px;
+    background-color: $color-accent;
+    color: $color-default-white;
+    border-radius: 16px;
+
+    @include vp-1439 {
+      padding: 0 28px;
+    }
+
+    @include vp-767 {
+      padding: 0 14px;
+    }
   }
 
   &:hover,
@@ -227,14 +248,14 @@
 .faq__accordion-element.is-active .faq__btn {
   background-color: $color-accent;
   color: $color-alabaster;
-  padding: 39px 38px 12px 38px;
+  padding: 39px 38px 12px;
 
   @include vp-1439 {
-    padding: 36px 28px 15px 28px;
+    padding: 36px 28px 15px;
   }
 
   @include vp-767 {
-    padding: 20px 13px 15px 13px;
+    padding: 20px 13px 15px;
   }
 
   .faq__btn-icon {
@@ -245,7 +266,7 @@
 
   &:hover,
   &:focus-visible {
-     background-color: $color-accent;
+    background-color: $color-accent;
 
     .faq__btn-icon {
       border-color: $color-default-white;
@@ -265,25 +286,21 @@
   }
 }
 
+.faq__accordion-element--thin.is-active .faq__btn {
+  padding-top: 24px;
+}
+
 .faq__accordion-element.is-active .faq__btn-icon {
   margin-left: 0;
-
-  svg {
-    display: none;
-  }
-
-  svg+svg {
-    display: block;
-  }
 }
 
 .faq__accordion-content {
   background-color: $color-default-white;
   color: $color-accent;
-  padding: 0 40px 0 40px;
+  padding: 0 40px;
 
   @include vp-1439 {
-    padding: 0 28px 0 28px;
+    padding: 0 28px;
   }
 
   p {
@@ -302,31 +319,7 @@
   }
 }
 
-.faq__accordion-element.is-active .faq__accordion-content {
-  padding: 0 40px 0 40px;
-  background-color: $color-accent;
-  color: $color-default-white;
-  border-radius: 16px;
-
-  @include vp-1439 {
-    padding: 0 28px 0 28px;
-  }
-
-  @include vp-767 {
-    padding: 0 14px 0 14px;
-  }
-
-  svg {
-    display: none;
-  }
-
-  svg+svg {
-    display: block;
-  }
-}
-
 .faq__br-desktop {
-
   @include vp-1439 {
     display: none;
   }
